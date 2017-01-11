@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "EasyNetworking"
-  s.version      = "0.0.1"
+  s.version      = "1.0.1"
   s.summary      = "base on AFNetworking and ReactiveCocoa"
 
   s.description  = <<-DESC
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
 
   # s.platform     = :ios
-    s.platform     = :ios, "9.3"
+    s.platform     = :ios, "9.0"
 
 
 
@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
 
 
   # s.framework  = "SomeFramework"
-    s.frameworks = "AFNetworking", "ReactiveObjC"
+  #  s.frameworks = "AFNetworking", "ReactiveObjC"
 
 
 
