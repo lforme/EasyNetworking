@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11D5F8A21E265B7E0018FAE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D5F8A11E265B7E0018FAE3 /* main.m */; };
+		11D5F8A51E265B7E0018FAE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D5F8A41E265B7E0018FAE3 /* AppDelegate.m */; };
+		11D5F8A81E265B7E0018FAE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D5F8A71E265B7E0018FAE3 /* ViewController.m */; };
+		11D5F8AB1E265B7E0018FAE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D5F8A91E265B7E0018FAE3 /* Main.storyboard */; };
+		11D5F8AD1E265B7E0018FAE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D5F8AC1E265B7E0018FAE3 /* Assets.xcassets */; };
+		11D5F8B01E265B7E0018FAE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D5F8AE1E265B7E0018FAE3 /* LaunchScreen.storyboard */; };
+		11D5F8F71E2660720018FAE3 /* AFHTTPSessionManager+SendTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D5F8EE1E2660720018FAE3 /* AFHTTPSessionManager+SendTool.m */; };
+		11D5F8F81E2660720018FAE3 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D5F8F01E2660720018FAE3 /* APIClient.m */; };
+		11D5F8F91E2660720018FAE3 /* BaseRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D5F8F21E2660720018FAE3 /* BaseRequset.m */; };
+		11D5F8FA1E2660720018FAE3 /* CacheMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D5F8F41E2660720018FAE3 /* CacheMetadata.m */; };
+		11D5F8FB1E2660720018FAE3 /* NetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D5F8F61E2660720018FAE3 /* NetworkConfig.m */; };
+		4320F13DDDFF3E30D2FA73EE /* libPods-EasyNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B69E009602C74463D6053DF8 /* libPods-EasyNetworking.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11D5F89D1E265B7E0018FAE3 /* EasyNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11D5F8A11E265B7E0018FAE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11D5F8A31E265B7E0018FAE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		11D5F8A41E265B7E0018FAE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		11D5F8A61E265B7E0018FAE3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		11D5F8A71E265B7E0018FAE3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		11D5F8AA1E265B7E0018FAE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11D5F8AC1E265B7E0018FAE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11D5F8AF1E265B7E0018FAE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11D5F8B11E265B7E0018FAE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11D5F8BA1E265B7E0018FAE3 /* EasyNetworkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyNetworkingTests.m; sourceTree = "<group>"; };
+		11D5F8BC1E265B7E0018FAE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11D5F8E91E265F670018FAE3 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
+		11D5F8EB1E265F6C0018FAE3 /* libReactiveObjC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveObjC.a; path = "Pods/../build/Debug-iphoneos/ReactiveObjC/libReactiveObjC.a"; sourceTree = "<group>"; };
+		11D5F8ED1E2660720018FAE3 /* AFHTTPSessionManager+SendTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+SendTool.h"; sourceTree = "<group>"; };
+		11D5F8EE1E2660720018FAE3 /* AFHTTPSessionManager+SendTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+SendTool.m"; sourceTree = "<group>"; };
+		11D5F8EF1E2660720018FAE3 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		11D5F8F01E2660720018FAE3 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		11D5F8F11E2660720018FAE3 /* BaseRequset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequset.h; sourceTree = "<group>"; };
+		11D5F8F21E2660720018FAE3 /* BaseRequset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequset.m; sourceTree = "<group>"; };
+		11D5F8F31E2660720018FAE3 /* CacheMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheMetadata.h; sourceTree = "<group>"; };
+		11D5F8F41E2660720018FAE3 /* CacheMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheMetadata.m; sourceTree = "<group>"; };
+		11D5F8F51E2660720018FAE3 /* NetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkConfig.h; sourceTree = "<group>"; };
+		11D5F8F61E2660720018FAE3 /* NetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkConfig.m; sourceTree = "<group>"; };
+		9153528417CEC84838B6D016 /* Pods-EasyNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyNetworking/Pods-EasyNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		B69E009602C74463D6053DF8 /* libPods-EasyNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B820EFFEAD0E46E490B011FC /* Pods-EasyNetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNetworkingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyNetworkingTests/Pods-EasyNetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		E9AC70DDA2D0547D60C7A7A5 /* Pods-EasyNetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNetworkingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyNetworkingTests/Pods-EasyNetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA29CADCEAE2826491F15BBD /* libPods-EasyNetworkingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyNetworkingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F936AF76E812069E123D9899 /* Pods-EasyNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyNetworking/Pods-EasyNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11D5F89A1E265B7E0018FAE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4320F13DDDFF3E30D2FA73EE /* libPods-EasyNetworking.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11D5F8941E265B7E0018FAE3 = {
+			isa = PBXGroup;
+			children = (
+				11D5F89F1E265B7E0018FAE3 /* EasyNetworking */,
+				11D5F8B91E265B7E0018FAE3 /* EasyNetworkingTests */,
+				11D5F89E1E265B7E0018FAE3 /* Products */,
+				1AE5F32436FBA19AD67756C4 /* Pods */,
+				FBFBF93E136F754ED46A29B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11D5F89E1E265B7E0018FAE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11D5F89D1E265B7E0018FAE3 /* EasyNetworking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11D5F89F1E265B7E0018FAE3 /* EasyNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				11D5F8E51E265ED20018FAE3 /* NetworkingTool */,
+				11D5F8A31E265B7E0018FAE3 /* AppDelegate.h */,
+				11D5F8A41E265B7E0018FAE3 /* AppDelegate.m */,
+				11D5F8A61E265B7E0018FAE3 /* ViewController.h */,
+				11D5F8A71E265B7E0018FAE3 /* ViewController.m */,
+				11D5F8A91E265B7E0018FAE3 /* Main.storyboard */,
+				11D5F8AC1E265B7E0018FAE3 /* Assets.xcassets */,
+				11D5F8AE1E265B7E0018FAE3 /* LaunchScreen.storyboard */,
+				11D5F8B11E265B7E0018FAE3 /* Info.plist */,
+				11D5F8A01E265B7E0018FAE3 /* Supporting Files */,
+			);
+			path = EasyNetworking;
+			sourceTree = "<group>";
+		};
+		11D5F8A01E265B7E0018FAE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11D5F8A11E265B7E0018FAE3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11D5F8B91E265B7E0018FAE3 /* EasyNetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				11D5F8BA1E265B7E0018FAE3 /* EasyNetworkingTests.m */,
+				11D5F8BC1E265B7E0018FAE3 /* Info.plist */,
+			);
+			path = EasyNetworkingTests;
+			sourceTree = "<group>";
+		};
+		11D5F8E51E265ED20018FAE3 /* NetworkingTool */ = {
+			isa = PBXGroup;
+			children = (
+				11D5F8ED1E2660720018FAE3 /* AFHTTPSessionManager+SendTool.h */,
+				11D5F8EE1E2660720018FAE3 /* AFHTTPSessionManager+SendTool.m */,
+				11D5F8EF1E2660720018FAE3 /* APIClient.h */,
+				11D5F8F01E2660720018FAE3 /* APIClient.m */,
+				11D5F8F11E2660720018FAE3 /* BaseRequset.h */,
+				11D5F8F21E2660720018FAE3 /* BaseRequset.m */,
+				11D5F8F31E2660720018FAE3 /* CacheMetadata.h */,
+				11D5F8F41E2660720018FAE3 /* CacheMetadata.m */,
+				11D5F8F51E2660720018FAE3 /* NetworkConfig.h */,
+				11D5F8F61E2660720018FAE3 /* NetworkConfig.m */,
+			);
+			path = NetworkingTool;
+			sourceTree = "<group>";
+		};
+		1AE5F32436FBA19AD67756C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F936AF76E812069E123D9899 /* Pods-EasyNetworking.debug.xcconfig */,
+				9153528417CEC84838B6D016 /* Pods-EasyNetworking.release.xcconfig */,
+				E9AC70DDA2D0547D60C7A7A5 /* Pods-EasyNetworkingTests.debug.xcconfig */,
+				B820EFFEAD0E46E490B011FC /* Pods-EasyNetworkingTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FBFBF93E136F754ED46A29B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11D5F8EB1E265F6C0018FAE3 /* libReactiveObjC.a */,
+				11D5F8E91E265F670018FAE3 /* libAFNetworking.a */,
+				B69E009602C74463D6053DF8 /* libPods-EasyNetworking.a */,
+				EA29CADCEAE2826491F15BBD /* libPods-EasyNetworkingTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11D5F89C1E265B7E0018FAE3 /* EasyNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11D5F8BF1E265B7E0018FAE3 /* Build configuration list for PBXNativeTarget "EasyNetworking" */;
+			buildPhases = (
+				7C769807A745697CFF8F0D6B /* 📦 Check Pods Manifest.lock */,
+				11D5F8991E265B7E0018FAE3 /* Sources */,
+				11D5F89A1E265B7E0018FAE3 /* Frameworks */,
+				11D5F89B1E265B7E0018FAE3 /* Resources */,
+				2E6F726B245ADECC3C07FF93 /* 📦 Embed Pods Frameworks */,
+				BC052B456C324E94EB70219D /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyNetworking;
+			productName = EasyNetworking;
+			productReference = 11D5F89D1E265B7E0018FAE3 /* EasyNetworking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11D5F8951E265B7E0018FAE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = WHY;
+				TargetAttributes = {
+					11D5F89C1E265B7E0018FAE3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = YX5743TCEJ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 11D5F8981E265B7E0018FAE3 /* Build configuration list for PBXProject "EasyNetworking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11D5F8941E265B7E0018FAE3;
+			productRefGroup = 11D5F89E1E265B7E0018FAE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11D5F89C1E265B7E0018FAE3 /* EasyNetworking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11D5F89B1E265B7E0018FAE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D5F8B01E265B7E0018FAE3 /* LaunchScreen.storyboard in Resources */,
+				11D5F8AD1E265B7E0018FAE3 /* Assets.xcassets in Resources */,
+				11D5F8AB1E265B7E0018FAE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E6F726B245ADECC3C07FF93 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyNetworking/Pods-EasyNetworking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C769807A745697CFF8F0D6B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC052B456C324E94EB70219D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyNetworking/Pods-EasyNetworking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11D5F8991E265B7E0018FAE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D5F8F81E2660720018FAE3 /* APIClient.m in Sources */,
+				11D5F8FA1E2660720018FAE3 /* CacheMetadata.m in Sources */,
+				11D5F8FB1E2660720018FAE3 /* NetworkConfig.m in Sources */,
+				11D5F8A81E265B7E0018FAE3 /* ViewController.m in Sources */,
+				11D5F8A51E265B7E0018FAE3 /* AppDelegate.m in Sources */,
+				11D5F8A21E265B7E0018FAE3 /* main.m in Sources */,
+				11D5F8F91E2660720018FAE3 /* BaseRequset.m in Sources */,
+				11D5F8F71E2660720018FAE3 /* AFHTTPSessionManager+SendTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11D5F8A91E265B7E0018FAE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11D5F8AA1E265B7E0018FAE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11D5F8AE1E265B7E0018FAE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11D5F8AF1E265B7E0018FAE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11D5F8BD1E265B7E0018FAE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		11D5F8BE1E265B7E0018FAE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11D5F8C01E265B7E0018FAE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F936AF76E812069E123D9899 /* Pods-EasyNetworking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YX5743TCEJ;
+				INFOPLIST_FILE = EasyNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WHY.EasyNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		11D5F8C11E265B7E0018FAE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9153528417CEC84838B6D016 /* Pods-EasyNetworking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YX5743TCEJ;
+				INFOPLIST_FILE = EasyNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WHY.EasyNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11D5F8981E265B7E0018FAE3 /* Build configuration list for PBXProject "EasyNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11D5F8BD1E265B7E0018FAE3 /* Debug */,
+				11D5F8BE1E265B7E0018FAE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11D5F8BF1E265B7E0018FAE3 /* Build configuration list for PBXNativeTarget "EasyNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11D5F8C01E265B7E0018FAE3 /* Debug */,
+				11D5F8C11E265B7E0018FAE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11D5F8951E265B7E0018FAE3 /* Project object */;
+}
