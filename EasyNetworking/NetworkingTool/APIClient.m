@@ -57,7 +57,10 @@
       if ([request shouldCache]) {
         if ([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"%@%@", [request apiAdress], [request param]]]) {
           return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-            [subscriber sendNext:[[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"%@%@", [request apiAdress], [request param]]]];
+            NSString *jsonString = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"%@%@", [request apiAdress], [request param]]];
+            NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+            NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:nil];  //解析
+            [subscriber sendNext: resultDic];
             [subscriber sendCompleted];
             return [RACDisposable new];
           }];
@@ -65,7 +68,9 @@
       }
       
        return [[self->_manager rac_GET:[request apiAdress] parameters:[request param] progress:nil] doNext:^(id  _Nullable x) {
-          [[NSUserDefaults standardUserDefaults] setObject:x forKey:[NSString stringWithFormat:@"%@%@", [request apiAdress], [request param]]];
+         NSData *metaData = [NSJSONSerialization dataWithJSONObject:x options:0 error:NULL];
+         NSString *jsonString = [[NSString alloc] initWithData:metaData encoding:NSUTF8StringEncoding];
+         [[NSUserDefaults standardUserDefaults] setValue:jsonString forKey:[NSString stringWithFormat:@"%@%@", [request apiAdress], [request param]]];
         }];
 
     }

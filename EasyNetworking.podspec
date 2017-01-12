@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "EasyNetworking"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "base on AFNetworking and ReactiveCocoa"
 
   s.description  = <<-DESC
@@ -38,9 +38,9 @@ Pod::Spec.new do |s|
 
 
   s.source_files  = "EasyNetworking/NetworkingTool/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  # s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  # s.public_header_files = "EasyNetworking/NetworkingTool/EasyNetworking.h"
 
 
 
