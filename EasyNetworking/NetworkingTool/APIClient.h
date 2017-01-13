@@ -19,11 +19,13 @@ typedef NS_ENUM(NSInteger, RequestMethod) {
 
 @protocol RequestConstraint <NSObject>
 @required
+@property (nonatomic, strong, readonly) NSDate *createdTime;
 - (NSString *)apiAdress;
 - (RequestMethod)methodName;
 @optional
 - (BOOL)shouldCache;
 - (NSDictionary *)param;
+- (NSInteger)cacheTimeInSeconds;
 @end
 
 

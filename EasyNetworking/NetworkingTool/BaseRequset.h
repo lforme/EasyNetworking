@@ -13,14 +13,17 @@
 
 
 @interface BaseRequset : NSObject<RequestConstraint>
-
+@property (nonatomic, strong, readonly) NSDate *createdTime;
 
 - (RequestMethod)methodName;
+
 - (NSString *)apiAdress;
 
 - (NSDictionary *)param;
 
 - (RACSignal *)start;
 
+// cache timeout
+- (NSInteger)cacheTimeInSeconds;
 
 @end

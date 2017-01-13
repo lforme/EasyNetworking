@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "EasyNetworking.h"
+#import "TestRequest.h"
+#import "NetworkConfig.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,20 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  [NetworkConfig sharedConfig].baseUrl = @"https://api.github.com/";
+  
+  TestRequest *test = [[TestRequest alloc] init];
+  
+  [[test start] subscribeNext:^(id  _Nullable x) {
+    NSLog(@"====%@", x);
+  }];
+  
+  dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    [[test start] subscribeNext:^(id  _Nullable x) {
+      NSLog(@"====%@", x);
+    }];
+
+  });
   
 }
 

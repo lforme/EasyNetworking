@@ -54,7 +54,10 @@
   switch ([request methodName]) {
     case RequestMethodGET:
     {
-      if ([request shouldCache]) {
+      NSDate *cacheTime = [NSDate dateWithTimeInterval:[request cacheTimeInSeconds] sinceDate:[request createdTime]];
+      NSDate *invalidTime = [NSDate date];
+      BOOL cacheInvalid = cacheTime.timeIntervalSinceReferenceDate < invalidTime.timeIntervalSinceReferenceDate;
+      if ([request shouldCache] && !cacheInvalid) {
         if ([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"%@%@", [request apiAdress], [request param]]]) {
           return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
             NSString *jsonString = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"%@%@", [request apiAdress], [request param]]];

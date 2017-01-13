@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11B9C9A11E29342800369178 /* TestRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B9C9A01E29342800369178 /* TestRequest.m */; };
 		11D5F8A21E265B7E0018FAE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D5F8A11E265B7E0018FAE3 /* main.m */; };
 		11D5F8A51E265B7E0018FAE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D5F8A41E265B7E0018FAE3 /* AppDelegate.m */; };
 		11D5F8A81E265B7E0018FAE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D5F8A71E265B7E0018FAE3 /* ViewController.m */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11B9C99F1E29342800369178 /* TestRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRequest.h; sourceTree = "<group>"; };
+		11B9C9A01E29342800369178 /* TestRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRequest.m; sourceTree = "<group>"; };
 		11D5F89D1E265B7E0018FAE3 /* EasyNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D5F8A11E265B7E0018FAE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11D5F8A31E265B7E0018FAE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +96,8 @@
 				11D5F8A41E265B7E0018FAE3 /* AppDelegate.m */,
 				11D5F8A61E265B7E0018FAE3 /* ViewController.h */,
 				11D5F8A71E265B7E0018FAE3 /* ViewController.m */,
+				11B9C99F1E29342800369178 /* TestRequest.h */,
+				11B9C9A01E29342800369178 /* TestRequest.m */,
 				11D5F8A91E265B7E0018FAE3 /* Main.storyboard */,
 				11D5F8AC1E265B7E0018FAE3 /* Assets.xcassets */,
 				11D5F8AE1E265B7E0018FAE3 /* LaunchScreen.storyboard */,
@@ -285,6 +290,7 @@
 				11D5F8FA1E2660720018FAE3 /* CacheMetadata.m in Sources */,
 				11D5F8FB1E2660720018FAE3 /* NetworkConfig.m in Sources */,
 				11D5F8A81E265B7E0018FAE3 /* ViewController.m in Sources */,
+				11B9C9A11E29342800369178 /* TestRequest.m in Sources */,
 				11D5F8A51E265B7E0018FAE3 /* AppDelegate.m in Sources */,
 				11D5F8A21E265B7E0018FAE3 /* main.m in Sources */,
 				11D5F8F91E2660720018FAE3 /* BaseRequset.m in Sources */,

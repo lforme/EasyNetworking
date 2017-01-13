@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "EasyNetworking"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "base on AFNetworking and ReactiveCocoa"
 
   s.description  = <<-DESC

@@ -7,8 +7,21 @@
 //
 
 #import "BaseRequset.h"
+@interface BaseRequset ()
+@property (nonatomic, strong, readwrite) NSDate *createdTime;
+@end
 
 @implementation BaseRequset
+
+- (instancetype)init
+{
+  self = [super init];
+  if (self) {
+    self.createdTime = [NSDate date];
+  }
+  return self;
+}
+
 - (NSString *)apiAdress {
   return @"";
 }
@@ -28,6 +41,15 @@
 
 - (RACSignal *)start {
   return [[APIClient shareClient] addRequest:self];
+}
+
+- (NSInteger)cacheTimeInSeconds {
+  return -1;
+}
+
+- (NSDate *)createdTime {
+  
+  return _createdTime;
 }
 
 @end
